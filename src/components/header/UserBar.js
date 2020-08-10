@@ -13,7 +13,7 @@ export default function UserBar() {
 const styles = {
     userBar: {
         display: "flex",
-        fontSize: "1.5rem",
+        fontSize: "1.4rem",
         textAlign: "center",
         justifyContent: "space-between",
         background: "#37474f",
