@@ -1,10 +1,10 @@
 #page-landing {
     width: 100vw;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-top: 5rem;
+    padding-top: 30rem;
+    padding-bottom: 3rem;
     color: var(--color-text-in-primary);
     background: var(--color-primary);
 }
@@ -31,7 +31,7 @@
 }
 
 #new-diary-form fieldset + fieldset {
-    margin-top: 6.4rem;
+    margin-top: 4rem;
 }
 
 #new-diary-form fieldset legend {
@@ -44,11 +44,6 @@
     width: 100%;
     padding-bottom: 1.2rem;
     border-bottom: 1px solid var(--color-line-in-white);
-}
-
-#new-diary-form fieldset .input-block + .textarea-block,
-#new-diary-form fieldset .select-block + .input-block {
-    margin-top: 2.4rem;
 }
 
 #page-landing footer {
@@ -129,3 +124,9 @@
 .total-connections img {
     margin-left: 0.8rem;
 }
+
+/* @media (min-width: 700px) {
+    #page-landing {
+        
+    }
+} */

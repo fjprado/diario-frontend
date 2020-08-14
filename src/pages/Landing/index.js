@@ -1,11 +1,18 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, FormEvent } from "react";
 import { Link } from "react-router-dom";
 
 import Input from "../../components/Input";
 import "./styles.css";
 import logoImg from "../../assets/images/logo.svg";
+import Textarea from "../../components/Textarea";
 
 export default function Landing() {
+    const [name, setName] = useState("");
+    const [email, setEmail] = useState("");
+    const [sex, setSex] = useState("");
+    const [age, setAge] = useState("");
+    const [diary, setDiary] = useState("");
+
     function handleCreateUser() {}
 
     return (
@@ -21,22 +28,45 @@ export default function Landing() {
                         <Input
                             name="name"
                             label="Como você gostaria de se identificar?"
-                            value="nome"
+                            value={name}
+                            onChange={(e) => {
+                                setName(e.target.value);
+                            }}
                         />
                         <Input
                             name="email"
                             label="Qual seu email?"
-                            value="email"
+                            value={email}
+                            onChange={(e) => {
+                                setEmail(e.target.value);
+                            }}
                         />
                         <Input
                             name="sex"
                             label="Como você se identifica sexualmente?"
-                            value="sexo"
+                            value={sex}
+                            onChange={(e) => {
+                                setSex(e.target.value);
+                            }}
                         />
                         <Input
                             name="age"
                             label="Qual a sua idade?"
-                            value="idade"
+                            value={age}
+                            onChange={(e) => {
+                                setAge(e.target.value);
+                            }}
+                        />
+                    </fieldset>
+                    <fieldset>
+                        <legend>Seu Diário</legend>
+                        <Textarea
+                            name="diary"
+                            label="Eu sou o seu diário, fale-me mais sobre você..."
+                            value={diary}
+                            onChange={(e) => {
+                                setDiary(e.target.value);
+                            }}
                         />
                     </fieldset>
                     <div className="buttons-container">
