@@ -1,0 +1,181 @@
+#page-landing {
+    width: 100vw;
+    height: 100%;
+    padding: 4rem 0rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+.logo-container img {
+    height: 8rem;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+#new-diary-form fieldset {
+    border: 0;
+    padding: 0 2.4rem;
+}
+
+#new-diary-form fieldset + fieldset {
+    margin-top: 4rem;
+}
+
+#new-diary-form fieldset .title-legend {
+    font: 700 2rem Archivo;
+    color: var(--color-primary-lighter);
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1.2rem;
+    border-bottom: 2px solid var(--color-box-footer);
+}
+
+#new-diary-form fieldset .common-legend {
+    font: 700 1.9rem Archivo;
+    color: var(--color-text-title);
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-landing footer {
+    padding: 2rem;
+    background: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+#new-diary-form footer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0;
+}
+
+.buttons-container a,
+.buttons-container button {
+    width: 25rem;
+    height: 5rem;
+    border-radius: 0.8rem;
+    font: 700 2rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-button-text);
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons-container a:first-child,
+.buttons-container button:first-child {
+    margin-right: 1.6rem;
+}
+
+.buttons-container button.pacient-button {
+    background: var(--color-primary-lighter);
+}
+
+.buttons-container a.psy-button {
+    background: var(--color-secondary);
+}
+
+.buttons-container a.login-button {
+    background: var(--color-primary-dark);
+}
+
+.buttons-container button.pacient-button:hover {
+    background: var(--color-primary-light);
+}
+
+.buttons-container a.psy-button:hover {
+    background: var(--color-secondary-dark);
+}
+
+.buttons-container a.login-button:hover {
+    background: var(--color-primary-darker);
+}
+
+.total-connections {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-connections img {
+    margin-left: 0.8rem;
+}
+
+@media (min-width: 900px) {
+    #page-landing-content {
+        max-width: 1100px;
+        height: fit-content;
+        min-height: calc(100vh - 8rem);
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        display: grid;
+        grid-template-rows: 600px 1fr;
+        grid-template-columns: 500px 2fr;
+        grid-gap: 2rem;
+        grid-template-areas:
+            "logo-terms form"
+            "total form";
+    }
+
+    .logo-container {
+        grid-area: logo-terms;
+        align-self: center;
+        text-align: left;
+        margin: 0;
+    }
+
+    .logo-container h2 {
+        text-align: initial;
+        font-size: 2rem;
+    }
+
+    .logo-container img {
+        height: 50%;
+    }
+
+    #new-diary-form {
+        grid-area: form;
+        justify-self: end;
+    }
+
+    #buttons-users {
+        grid-area: total;
+        justify-content: flex-start;
+    }
+}

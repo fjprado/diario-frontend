@@ -1,13 +1,7 @@
 import React from "react";
-import "./App.css";
-import UserBar from "./components/header/UserBar";
-import NewUserEntry from "./components/home/newUserEntry/NewUserEntry";
+import "./assets/styles/global.css";
+import Routes from "./routes";
 
 export default function App() {
-    return (
-        <div>
-            <UserBar />
-            <NewUserEntry />
-        </div>
-    );
+    return <Routes />;
 }
