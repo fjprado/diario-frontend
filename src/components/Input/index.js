@@ -1,4 +1,4 @@
-import React, { InputHTMLAttributes } from "react";
+import React from "react";
 import "./styles.css";
 
 export default function Input({ label, name, ...rest }) {

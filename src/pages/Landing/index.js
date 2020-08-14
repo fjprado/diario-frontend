@@ -1,4 +1,4 @@
-import React, { useState, FormEvent } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 import Input from "../../components/Input";
@@ -13,7 +13,10 @@ export default function Landing() {
     const [age, setAge] = useState("");
     const [diary, setDiary] = useState("");
 
-    function handleCreateUser() {}
+    function handleCreateUser(e) {
+        e.preventDefault();
+        alert("Cadastro efetuado com sucesso");
+    }
 
     return (
         <div id="page-landing">
@@ -24,7 +27,10 @@ export default function Landing() {
                 </div>
                 <form id="new-diary-form" onSubmit={handleCreateUser}>
                     <fieldset>
-                        <legend>Seus Dados</legend>
+                        <legend className="title-legend">
+                            Você é novo por aqui?
+                        </legend>
+                        <legend className="common-legend">Seus Dados</legend>
                         <Input
                             name="name"
                             label="Como você gostaria de se identificar?"
@@ -59,7 +65,7 @@ export default function Landing() {
                         />
                     </fieldset>
                     <fieldset>
-                        <legend>Seu Diário</legend>
+                        <legend className="common-legend">Seu Diário</legend>
                         <Textarea
                             name="diary"
                             label="Eu sou o seu diário, fale-me mais sobre você..."
@@ -75,7 +81,7 @@ export default function Landing() {
                         </button>
                     </div>
                 </form>
-                <footer>
+                <footer id="footer">
                     <span className="total-connections">
                         Total de 100 conexões já realizadas{" "}
                     </span>

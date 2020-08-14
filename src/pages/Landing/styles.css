@@ -1,10 +1,10 @@
 #page-landing {
     width: 100vw;
+    height: 100%;
+    padding: 4rem 0rem;
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-    padding-top: 30rem;
-    padding-bottom: 3rem;
+    align-items: center;
     color: var(--color-text-in-primary);
     background: var(--color-primary);
 }
@@ -20,7 +20,7 @@
 
 .logo-container h2 {
     font-weight: 500;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     line-height: 4.6rem;
     margin-top: 0.8rem;
 }
@@ -34,8 +34,20 @@
     margin-top: 4rem;
 }
 
-#new-diary-form fieldset legend {
+#new-diary-form fieldset .title-legend {
     font: 700 2rem Archivo;
+    color: var(--color-primary-lighter);
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding-bottom: 1.2rem;
+    border-bottom: 2px solid var(--color-box-footer);
+}
+
+#new-diary-form fieldset .common-legend {
+    font: 700 1.9rem Archivo;
     color: var(--color-text-title);
     margin-bottom: 2.2rem;
     display: flex;
@@ -54,7 +66,7 @@
     margin-top: 4rem;
 }
 
-#page-teacher-form footer span {
+#new-diary-form footer span {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -125,8 +137,45 @@
     margin-left: 0.8rem;
 }
 
-/* @media (min-width: 700px) {
-    #page-landing {
-        
+@media (min-width: 900px) {
+    #page-landing-content {
+        max-width: 1100px;
+        height: fit-content;
+        min-height: calc(100vh - 8rem);
+        padding-top: 0rem;
+        padding-bottom: 0rem;
+        display: grid;
+        grid-template-rows: 600px 1fr;
+        grid-template-columns: 500px 2fr;
+        grid-gap: 2rem;
+        grid-template-areas:
+            "logo-terms form"
+            "total form";
     }
-} */
+
+    .logo-container {
+        grid-area: logo-terms;
+        align-self: center;
+        text-align: left;
+        margin: 0;
+    }
+
+    .logo-container h2 {
+        text-align: initial;
+        font-size: 2rem;
+    }
+
+    .logo-container img {
+        height: 50%;
+    }
+
+    #new-diary-form {
+        grid-area: form;
+        justify-self: end;
+    }
+
+    #buttons-users {
+        grid-area: total;
+        justify-content: flex-start;
+    }
+}
