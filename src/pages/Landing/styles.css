@@ -1,0 +1,88 @@
+#page-landing {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding-top: 5rem;
+    color: var(--color-text-in-primary);
+    background: var(--color-primary);
+}
+
+.logo-container img {
+    height: 8rem;
+}
+
+.logo-container {
+    text-align: center;
+    margin-bottom: 3.2rem;
+}
+
+.logo-container h2 {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 4.6rem;
+    margin-top: 0.8rem;
+}
+
+.buttons-container {
+    display: flex;
+    justify-content: center;
+    margin: 3.2rem 0;
+}
+
+.buttons-container a,
+.buttons-container button {
+    width: 25rem;
+    height: 5rem;
+    border-radius: 0.8rem;
+    font: 700 2rem Archivo;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: var(--color-button-text);
+    transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+}
+
+.buttons-container a:first-child,
+.buttons-container button:first-child {
+    margin-right: 1.6rem;
+}
+
+.buttons-container button.pacient-button {
+    background: var(--color-primary-lighter);
+}
+
+.buttons-container a.psy-button {
+    background: var(--color-secondary);
+}
+
+.buttons-container a.login-button {
+    background: var(--color-primary-dark);
+}
+
+.buttons-container button.pacient-button:hover {
+    background: var(--color-primary-light);
+}
+
+.buttons-container a.psy-button:hover {
+    background: var(--color-secondary-dark);
+}
+
+.buttons-container a.login-button:hover {
+    background: var(--color-primary-darker);
+}
+
+.total-connections {
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.total-connections img {
+    margin-left: 0.8rem;
+}
