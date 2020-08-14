@@ -25,10 +25,53 @@
     margin-top: 0.8rem;
 }
 
+#new-diary-form fieldset {
+    border: 0;
+    padding: 0 2.4rem;
+}
+
+#new-diary-form fieldset + fieldset {
+    margin-top: 6.4rem;
+}
+
+#new-diary-form fieldset legend {
+    font: 700 2rem Archivo;
+    color: var(--color-text-title);
+    margin-bottom: 2.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-bottom: 1.2rem;
+    border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#new-diary-form fieldset .input-block + .textarea-block,
+#new-diary-form fieldset .select-block + .input-block {
+    margin-top: 2.4rem;
+}
+
+#page-landing footer {
+    padding: 2rem;
+    background: var(--color-box-footer);
+    border-top: 1px solid var(--color-line-in-white);
+    border-radius: 1rem;
+    margin-top: 4rem;
+}
+
+#page-teacher-form footer span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    line-height: 2.4rem;
+    color: var(--color-text-complement);
+}
+
 .buttons-container {
     display: flex;
     justify-content: center;
-    margin: 3.2rem 0;
+    margin: 3rem 0;
 }
 
 .buttons-container a,

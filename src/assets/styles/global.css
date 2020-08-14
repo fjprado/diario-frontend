@@ -9,15 +9,15 @@
     --color-secondary: #0498d3;
     --color-secondary-dark: #0273a0;
     --color-title-in-primary: #ffffff;
-    --color-text-in-primary: #d4c2ff;
-    --color-text-title: #32264d;
+    --color-text-in-primary: #e3ddf7;
+    --color-text-title: #4e3c79;
     --color-text-complement: #9c98a6;
     --color-text-base: #6a6180;
     --color-line-in-white: #e6e6f0;
     --color-input-background: #f8f8fc;
     --color-button-text: #ffffff;
     --color-box-base: #ffffff;
-    --color-box-footer: #fafafc;
+    --color-box-footer: #5f8ce0;
 }
 
 * {
