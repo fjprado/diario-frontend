@@ -139,14 +139,14 @@
 
 @media (min-width: 900px) {
     #page-landing-content {
-        max-width: 1100px;
+        max-width: 1200px;
         height: fit-content;
         min-height: calc(100vh - 8rem);
         padding-top: 0rem;
         padding-bottom: 0rem;
         display: grid;
         grid-template-rows: 600px 1fr;
-        grid-template-columns: 500px 2fr;
+        grid-template-columns: 550px 2fr;
         grid-gap: 2rem;
         grid-template-areas:
             "logo-terms form"
@@ -177,5 +177,9 @@
     #buttons-users {
         grid-area: total;
         justify-content: flex-start;
+    }
+
+    #footer {
+        max-height: 18rem;
     }
 }
