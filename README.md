@@ -42,7 +42,7 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 
 ## Team
 
-| <a href="https://www.linkedin.com/in/fernando-prado-122976156/" target="_blank">**Fernando Prado**</a> | <a href="https://www.linkedin.com/in/lu%C3%ADs-gustavo-santarosa-pinto-72235a56/" target="_blank">**FVCproductions**</a> |
+| <a href="https://www.linkedin.com/in/fernando-prado-122976156/" target="_blank">**Fernando Prado**</a> | <a href="https://www.linkedin.com/in/lu%C3%ADs-gustavo-santarosa-pinto-72235a56/" target="_blank">**Luís Gustavo Santarosa**</a> |
 | :---: |:---:| 
 | [![Fernando Prado](https://avatars3.githubusercontent.com/u/4109319?s=200)](https://github.com/fjprado)    | [![Luís Gustavo Santarosa](https://avatars3.githubusercontent.com/u/60905574?s=200)](https://github.com/GustavoSantarosa) | 
 | <a href="https://github.com/fjprado" target="_blank">`github.com/fjprado`</a> | <a href="https://github.com/GustavoSantarosa" target="_blank">`github.com/GustavoSantarosa`</a> | 
